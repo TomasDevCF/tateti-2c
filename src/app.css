@@ -1,0 +1,47 @@
+.tablero > * {
+  height: 33.3333%;
+}
+
+.clickable {
+  cursor:pointer;
+}
+
+.icon-x {
+  font-size: 150px !important;
+}
+
+.icon-o {
+  font-size: 85px !important;
+}
+
+.icon {
+  animation: forwards ease-in-out;
+  animation-duration: .2s;
+  animation-name: icon-spawn;
+}
+
+@keyframes icon-spawn {
+  0% {
+    scale: 0;
+  }
+  75% {
+    scale: 1.2;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+@media (max-width: 720px) {
+  .tablero {
+    height: 60% !important;
+  }
+
+  .icon-x {
+    font-size: 110px !important;
+  }
+
+  .icon-o {
+    font-size: 60px !important;
+  }
+}
